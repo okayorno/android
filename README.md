@@ -279,9 +279,10 @@ else if (item.getItemId() == R.id.menu_sort1) {
             null,
            
 ```
-http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEO1IPopx4nQWJWNLBNL*TTHG0VnX73Gmaju1VyQDaM.SGy7PdwI5Znz4bp0.gRSFLKkI1XGikL6W.MhCddEEBD0!/b&bo=LAKxAywCsQMDFzI!&rf=viewer_4
-http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEO1IPopx4nQWJWNLBNL*TTHdPH*e6Mj9ln9iwKVUFEoxOjUjF9BIxG9HEOQV2.zrPz2KaErsQ7H0I6xCFv6QIBM!/b&bo=JQKoAyUCqAMDFzI!&rf=viewer_4
-http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEIXrwMl2oS2AZPiGtLtaYKL7PviCWfkDrPwvgcUe1LZE76sCIP1lRgiakSolbOq3vw*QlO83YrDooTQZzzo3wZ4!/b&bo=JQLDAyUCwwMDFzI!&rf=viewer_4
+![图片描述](http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEO1IPopx4nQWJWNLBNL*TTGxWN.3yVoBb4eUzDlkmaX2rh66zlR.PVGCcT7pcYMy5g0.8XfB4syYUDUguVXimTI!/b&bo=JgKzAyYCswMDFzI!&rf=viewer_4)
+![图片描述](http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEO1IPopx4nQWJWNLBNL*TTHdPH*e6Mj9ln9iwKVUFEoxOjUjF9BIxG9HEOQV2.zrPz2KaErsQ7H0I6xCFv6QIBM!/b&bo=JQKoAyUCqAMDFzI!&rf=viewer_4)
+![图片描述](http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEIXrwMl2oS2AZPiGtLtaYKL7PviCWfkDrPwvgcUe1LZE76sCIP1lRgiakSolbOq3vw*QlO83YrDooTQZzzo3wZ4!/b&bo=JQLDAyUCwwMDFzI!&rf=viewer_4)
+
 2.**功能文档：更改背景（黑白）**
 
 **功能概述**
