@@ -74,6 +74,7 @@ android:theme="@android:style/Theme.Holo.Light"
     android:paddingLeft="5dp"
     android:singleLine="true" />
 ```
+![图片描述](https://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEIXrwMl2oS2AZPiGtLtaYKKLPGwRN2rqA188XVrutqLnnjVD0n8UDydbwtQIFda*TMNP1PlOQT4dZIJXn0EoO1Q!/b&bo=IgKGAyIChgMDByI!&rf=viewer_4)
 
 ### 2. 搜索功能实现
 
