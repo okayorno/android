@@ -210,6 +210,7 @@ public class NoteSearch extends Activity implements SearchView.OnQueryTextListen
     </intent-filter>
 </activity>
 ```
+![图片描述](http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEO1IPopx4nQWJWNLBNL*TTHG0VnX73Gmaju1VyQDaM.SGy7PdwI5Znz4bp0.gRSFLKkI1XGikL6W.MhCddEEBD0!/b&bo=LAKxAywCsQMDFzI!&rf=viewer_4)
 
 ------
 
@@ -278,3 +279,67 @@ else if (item.getItemId() == R.id.menu_sort1) {
             null,
            
 ```
+http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEO1IPopx4nQWJWNLBNL*TTHG0VnX73Gmaju1VyQDaM.SGy7PdwI5Znz4bp0.gRSFLKkI1XGikL6W.MhCddEEBD0!/b&bo=LAKxAywCsQMDFzI!&rf=viewer_4
+http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEO1IPopx4nQWJWNLBNL*TTHdPH*e6Mj9ln9iwKVUFEoxOjUjF9BIxG9HEOQV2.zrPz2KaErsQ7H0I6xCFv6QIBM!/b&bo=JQKoAyUCqAMDFzI!&rf=viewer_4
+http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEIXrwMl2oS2AZPiGtLtaYKL7PviCWfkDrPwvgcUe1LZE76sCIP1lRgiakSolbOq3vw*QlO83YrDooTQZzzo3wZ4!/b&bo=JQLDAyUCwwMDFzI!&rf=viewer_4
+2.**功能文档：更改背景（黑白）**
+
+**功能概述**
+ 本功能允许用户在 NotePad 应用中切换背景颜色，支持黑白两种主题。用户可以通过点击按钮来切换背景颜色和文字颜色，实现更好的视觉体验，适应不同的使用环境（如昼夜模式）。
+
+**功能实现**
+
+1. **按钮设置**：在应用界面上设置一个按钮，用户点击该按钮后触发背景颜色切换功能。
+
+   ```xml
+   <Button
+       android:id="@+id/themeToggleButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="切换背景" />
+   ```
+
+2. **颜色切换**：按钮点击后，界面背景颜色会在黑色和白色之间切换，文字颜色也随之变化，以确保良好的可读性。
+
+   ```java
+   Button themeToggleButton = findViewById(R.id.themeToggleButton);
+   themeToggleButton.setOnClickListener(new View.OnClickListener() {
+       @Override
+       public void onClick(View v) {
+           if (isNightMode) {
+               setDayMode();
+           } else {
+               setNightMode();
+           }
+       }
+   });
+   ```
+
+3. **昼夜模式**：白色背景为日间模式，黑色背景为夜间模式，按钮每次点击都会在这两种模式之间切换。
+
+   ```java
+   private void setDayMode() {
+       getWindow().getDecorView().setBackgroundColor(Color.WHITE);
+       TextView textView = findViewById(R.id.textView);
+       textView.setTextColor(Color.BLACK);
+       isNightMode = false;
+   }
+   
+   private void setNightMode() {
+       getWindow().getDecorView().setBackgroundColor(Color.BLACK);
+       TextView textView = findViewById(R.id.textView);
+       textView.setTextColor(Color.WHITE);
+       isNightMode = true;
+   }
+   ```
+
+4. **按钮状态管理**：`isNightMode` 变量用来判断当前是夜间模式还是日间模式，以便进行正确的切换。
+
+   ```java
+   private boolean isNightMode = false;  // 默认为日间模式
+   
+   ```
+
+   ![图片描述](http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEO1IPopx4nQWJWNLBNL*TTGxWN.3yVoBb4eUzDlkmaX2rh66zlR.PVGCcT7pcYMy5g0.8XfB4syYUDUguVXimTI!/b&bo=JgKzAyYCswMDFzI!&rf=viewer_4)
+![图片描述](http://m.qpic.cn/psc?/0451802a-3cf5-40df-84cb-fa749e3f65d7/TmEUgtj9EK6.7V8ajmQrEIXrwMl2oS2AZPiGtLtaYKL7PviCWfkDrPwvgcUe1LZE76sCIP1lRgiakSolbOq3vw*QlO83YrDooTQZzzo3wZ4!/b&bo=JQLDAyUCwwMDFzI!&rf=viewer_4)
+
